@@ -1,0 +1,105 @@
+.dmca-page {
+    padding: 140px 20px 100px;
+    background: radial-gradient(circle at 50% 0%, rgba(0, 255, 65, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+.dmca-container {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 60px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+}
+
+.dmca-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dmca-header h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dmca-header p {
+    color: #ff4b2b; /* Alert red for importance */
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.dmca-content section {
+    margin-bottom: 40px;
+}
+
+.dmca-content h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-left: 4px solid var(--primary-green);
+    padding-left: 15px;
+}
+
+.dmca-content p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.dmca-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.dmca-content ul li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.dmca-content ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-size: 20px;
+}
+
+.dmca-footer-note {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(255, 75, 43, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 75, 43, 0.1);
+}
+
+.dmca-footer-note p {
+    color: #ff4b2b;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .dmca-container {
+        padding: 40px 25px;
+        border-radius: 30px;
+    }
+}

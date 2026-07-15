@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@900&family=Syncopate:wght@700&display=swap');
+@import url('css/header.css');
+@import url('css/top_hero.css');
+@import url('css/hero.css');
+@import url('css/services.css');
+@import url('css/why_choose_us.css');
+@import url('css/techstack.css');
+@import url('css/projects.css');
+@import url('css/lightbox.css');
+@import url('css/footer.css');
+@import url('css/cookie_popup.css');
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050505;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/bg/back1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden; /* সাইডবার যাতে স্ক্রিনের বাইরে থেকে স্ক্রল না করা যায় */
+}
+
+main {
+    padding-top: 100px; /* হেডারের জন্য উপরে কিছুটা জায়গা রাখা হয়েছে */
+}

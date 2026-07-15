@@ -1,0 +1,64 @@
+.why-choose-section {
+    padding: 20px 20px 80px 35px; /* প্যাডিং বাড়িয়ে নিচে নামানো হলো */
+    margin-top: 5; /* নেগেটিভ মার্জিন সরানো হলো */
+    position: relative;
+    z-index: 2;
+}
+
+.why-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* কার্ডগুলোকে একদম মাঝখানে রাখবে */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.why-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 35px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 320px; /* কার্ডের সাইজ নির্দিষ্ট করা হলো */
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 255, 65, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.why-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 255, 65, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    color: var(--primary-green);
+}
+
+.why-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.why-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .why-choose-section {
+        padding: 0 20px 60px 20px;
+    }
+}

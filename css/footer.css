@@ -1,0 +1,204 @@
+.main-footer {
+    background: rgba(0, 0, 0, 0.4); /* হালকা কালো ও ট্রান্সপারেন্ট */
+    padding: 40px 30px 20px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(15px); /* গ্লাস ইফেক্ট */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden; /* ব্যাকগ্রাউন্ড আইকন যাতে বাইরে না যায় */
+}
+
+.footer-bg-icon {
+    position: absolute;
+    top: 50%;
+    left: center;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    opacity: 0.15; /* অপাসিটি বাড়িয়ে ০.১৫ করা হলো যাতে দেখা যায় */
+    pointer-events: none;
+    z-index: 0; /* ব্যাকগ্রাউন্ডের উপরে কিন্তু কন্টেন্টের নিচে থাকবে */
+    filter: blur(5px);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative; /* পজিশন রিলেটিভ করা হলো */
+    z-index: 1; /* কন্টেন্ট যাতে আইকনের উপরে থাকে */
+}
+
+.footer-top {
+    margin-top: 10px;
+    margin-bottom: -40px; /* নেগেটিভ মার্জিন সরিয়ে পজিটিভ করা হলো যাতে দাগ নিচে নামে */
+}
+
+.footer-brand {
+    max-width: 700px;
+}
+
+.footer-logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-social-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .footer-logo-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .footer-social-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .footer-copyright {
+        font-size: 12px;
+    }
+}
+
+.footer-logo-large {
+    font-family: 'LifeSavers', cursive;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.footer-desc {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 850px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px; /* Adjusted gap to accommodate larger icons */
+}
+
+.footer-social a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; /* Define a clickable area */
+    height: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-social a svg {
+    width: 20px; /* Icon size increased from 18px */
+    height: 20px;
+}
+
+.footer-social a:hover {
+    transform: translateY(-3px);
+    background: var(--primary-green);
+    color: #000;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 30px;
+    align-items: start;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 4px 0;
+}
+
+.footer-column ul li a:hover {
+    color: var(--primary-green);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+    .footer-links-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+    }
+    .main-footer {
+        padding: 30px 20px;
+    }
+    .footer-brand {
+        max-width: 100%;
+    }
+}

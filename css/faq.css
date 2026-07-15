@@ -1,0 +1,126 @@
+.faq-page {
+    padding: 140px 20px 100px;
+    background: radial-gradient(circle at 50% 0%, rgba(0, 255, 65, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-header h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.faq-header p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(0, 255, 65, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.faq-question {
+    padding: 25px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq-question h3 {
+    font-size: clamp(16px, 2vw, 19px);
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.faq-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-green);
+    transition: transform 0.4s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px; /* Large enough to hold text */
+}
+
+.faq-answer-inner {
+    padding: 0 30px 30px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.support-note {
+    margin-top: 60px;
+    text-align: center;
+    background: rgba(0, 255, 65, 0.05);
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 255, 65, 0.1);
+}
+
+.support-note h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.support-note p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .faq-question {
+        padding: 20px;
+    }
+    .faq-answer-inner {
+        padding: 0 20px 20px;
+    }
+}
