@@ -24,7 +24,7 @@
   </a>
 </p>
 
-> 🔗 **Live Website:** [Visit Flaxixy Boy Hub](https://flaxixyboy.github.io/flaxixyboy/)
+> 🔗 **Live Website:** [Visit Flaxixy Boy](https://flaxixyboy.github.io/flaxixyboy/)
 
 ---
 
